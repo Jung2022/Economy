@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".consumption.DepositDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginVertical="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/round_orange"
+        android:padding="10dp"
+        android:elevation="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/DepositDetailName"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="TextView" />
+        <TextView
+            android:id="@+id/DepositBank"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="TextView"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/blue"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:useDefaultMargins="true"
+            android:columnCount="4">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_width="80sp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="최고 금리 :" />
+
+            <TextView
+                android:id="@+id/tvDepositMaxRate"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_width="90sp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_width="80sp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="최저 금리 :" />
+
+            <TextView
+                android:layout_row="0"
+                android:layout_column="3"
+                android:id="@+id/tvDepositMinRate"
+                android:layout_width="90sp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="TextView" />
+
+            <TextView
+                android:layout_width="80sp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:text="가입 기간 :"/>
+            <TextView
+                android:id="@+id/tvDepositPeriod"
+                android:layout_width="90sp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:textSize="15sp"
+                android:text="6~36개월"/>
+            <TextView
+                android:layout_width="80sp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:text="가입 대상 :"/>
+            <TextView
+                android:id="@+id/tvDepositTarget"
+                android:layout_width="90sp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:textSize="15sp"
+                android:text="20대, 30대"/>
+            <TextView
+                android:layout_width="80sp"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:textSize="15sp"
+                android:text="가입 금액 :"/>
+            <TextView
+                android:id="@+id/tvDepositMoney"
+                android:layout_width="280sp"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:textSize="15sp"
+                android:layout_columnSpan="3"
+                android:text="가입 금액"/>
+        </GridLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/round_orange"
+        android:padding="10dp"
+        android:elevation="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:text="적금 계산기"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/blue"/>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:useDefaultMargins="true"
+            android:columnCount="2">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="기간 :" />
+            <Spinner
+                android:id="@+id/depositPeriodSpinner"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                />
+<!--            <TextView-->
+<!--                android:id="@+id/tvCalPeriod"-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="20sp"-->
+<!--                android:text="6개월"/>-->
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="금리"/>
+            <TextView
+                android:id="@+id/tvCalRate"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="0.0 %"/>
+            <SeekBar
+                android:id="@+id/seekBarRate"
+                android:layout_columnSpan="2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:progress="0"
+                android:max="200"/>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="금액"/>
+            <TextView
+                android:id="@+id/tvCalMoney"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="1000 원"/>
+            <SeekBar
+                android:id="@+id/seekBarMoney"
+                android:layout_columnSpan="2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:progress="0"
+                android:max="200"/>
+            <TextView
+                android:id="@+id/tvGoalMoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="2"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="목표 금액 : 0 원"/>
+            <TextView
+                android:id="@+id/tvCalResult"
+                android:layout_width="match_parent"
+                android:height="35dp"
+                android:layout_columnSpan="2"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:text="적금 금액 : 0 원"/>
+        </GridLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDEF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:text="가까운 지점 보러가기" />
+
+</LinearLayout>

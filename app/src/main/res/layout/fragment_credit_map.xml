@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".credits.CreditMapFragment">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="600dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_gravity="center"
+                android:id="@+id/tvCreditMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="신용 지도" />
+            <ImageView
+                android:id="@+id/imgCreditMap"
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+                android:src="@drawable/map_ex" />
+            <ImageView
+                android:id="@+id/imgCreditPredictGraph"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:src="@drawable/graph_ex" />
+            <TextView
+                android:id="@+id/tvCreditAvg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="지역구, 나이 평균 신용점수 : 000점"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="신용 점수(NICE) : "/>
+                <EditText
+                    android:id="@+id/eTCredit"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:maxLength="4"
+                    android:inputType="number"
+                    android:hint="점수 입력(0~1000)"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="점"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="대출 금액 : "/>
+                <EditText
+                    android:id="@+id/eTLoan"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:maxLength="11"
+                    android:inputType="number"
+                    android:hint="금액 입력"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="원"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:backgroundTint="@color/blue"
+        android:id="@+id/btnCreditPF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="신용점수 맞춤형 대출상품 보러가기" />
+</LinearLayout>

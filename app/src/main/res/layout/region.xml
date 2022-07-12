@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="300dp">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RadioButton
+                android:id="@+id/rbJUN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="중구" />
+
+            <RadioButton
+                android:id="@+id/rbSEO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="서구" />
+
+            <RadioButton
+                android:id="@+id/rbDON"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="동구" />
+
+            <RadioButton
+                android:id="@+id/rbYDG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="영도구" />
+
+            <RadioButton
+                android:id="@+id/rbBJG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="부산진구" />
+
+            <RadioButton
+                android:id="@+id/rbDNG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="동래구" />
+
+            <RadioButton
+                android:id="@+id/rbNAM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="남구" />
+
+            <RadioButton
+                android:id="@+id/rbBUK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="북구" />
+
+            <RadioButton
+                android:id="@+id/rbGSG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="강서구" />
+
+            <RadioButton
+                android:id="@+id/rbHUD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="해운대구" />
+
+            <RadioButton
+                android:id="@+id/rbSHG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="사하구" />
+
+            <RadioButton
+                android:id="@+id/rbGJG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="금정구" />
+
+            <RadioButton
+                android:id="@+id/rbYJG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="연제구" />
+
+            <RadioButton
+                android:id="@+id/rbSYG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="수영구" />
+
+            <RadioButton
+                android:id="@+id/rbSSG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="사상구" />
+
+            <RadioButton
+                android:id="@+id/rbGIJ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="기장군" />
+        </RadioGroup>
+    </ScrollView>
+=
+</LinearLayout>

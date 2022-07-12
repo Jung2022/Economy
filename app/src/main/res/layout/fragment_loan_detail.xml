@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".credits.LoanDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginVertical="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/round_blue"
+        android:padding="10dp"
+        android:elevation="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/LoanDetailName"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="대출이름" />
+        <TextView
+            android:id="@+id/LoanBank"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="은행명"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/blue"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:useDefaultMargins="true"
+            android:columnCount="4">
+
+            <TextView
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_width="80sp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="금리 :" />
+
+            <TextView
+                android:id="@+id/tvLoanRate"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_width="90sp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="금리(%)" />
+
+            <TextView
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_width="80sp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="대출 기한 :" />
+
+            <TextView
+                android:layout_row="0"
+                android:layout_column="3"
+                android:id="@+id/tvLoanPeriod"
+                android:layout_width="90sp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="기한" />
+
+            <TextView
+                android:layout_width="80sp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:text="대출 조건 :"/>
+            <TextView
+                android:id="@+id/tvLoanCondition"
+                android:layout_width="280sp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:textSize="15sp"
+                android:layout_columnSpan="3"
+                android:text="신용등급"/>
+            <TextView
+                android:layout_width="80sp"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:textSize="15sp"
+                android:text="대출 한도 :"/>
+            <TextView
+                android:id="@+id/tvLoanMoney"
+                android:layout_width="280sp"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:textSize="15sp"
+                android:layout_columnSpan="3"
+                android:text="한도 금액"/>
+        </GridLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/round_blue"
+        android:padding="10dp"
+        android:elevation="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:text="대출 계산기"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/blue"/>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:useDefaultMargins="true"
+            android:columnCount="2">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="기간 :" />
+            <EditText
+                android:id="@+id/editYear"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:maxLength="3"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="대출 년 수" />
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="금리(%)"/>
+            <EditText
+                android:id="@+id/editInterest"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:maxLength="5"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:hint="금리(%) 입력" />
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="금액"/>
+            <EditText
+                android:id="@+id/editMoney"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="11"
+                android:hint="대출 금액 입력" />
+            <TextView
+                android:layout_width="120dp"
+                android:height="40dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="대출금액(₩) :"/>
+            <TextView
+                android:id="@+id/tvGoalMoney2"
+                android:layout_width="200dp"
+                android:gravity="right"
+                android:height="40dp"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:text="0"/>
+            <TextView
+                android:layout_width="120dp"
+                android:height="40dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="월납입금(₩) :"/>
+            <TextView
+                android:id="@+id/tvLoanCalResult"
+                android:layout_width="200dp"
+                android:gravity="right"
+                android:height="40dp"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:text="0"/>
+        </GridLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLEF"
+        android:backgroundTint="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:text="가까운 지점 보러가기" />
+
+
+</LinearLayout>

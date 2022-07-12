@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="deposit_period_array">
+        <item>6개월</item>
+        <item>12개월</item>
+        <item>24개월</item>
+        <item>36개월</item>
+        <item>60개월</item>
+    </string-array>
+</resources>
