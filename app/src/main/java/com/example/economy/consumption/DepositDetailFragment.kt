@@ -1,5 +1,6 @@
 package com.example.economy.consumption
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,14 +9,13 @@ import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.SeekBar
-import com.example.economy.MainActivity
 import com.example.economy.R
 import com.example.economy.databinding.FragmentDepositDetailBinding
 import com.example.economy.model.DepositModel
 import java.text.NumberFormat
 import java.util.*
 
-class DepositDetailFragment : Fragment() {
+open class DepositDetailFragment : Fragment() {
 
     private fun changeFragment(frag: Fragment){
         requireActivity().supportFragmentManager
@@ -47,6 +47,11 @@ class DepositDetailFragment : Fragment() {
         val goalMoney=requireArguments().getInt("money")
         binding.tvGoalMoney.text="목표 금액 : "+NumberFormat.getCurrencyInstance(Locale.getDefault()).format(goalMoney)
 
+        binding.btnDEF.setOnClickListener {
+            changeFragment(DepositEndFragment())
+//            val intent = Intent(activity,DepositEndActivity::class.java)
+//            startActivity(intent)
+        }
 
         val minMoney=1000
         var money=minMoney
@@ -142,9 +147,7 @@ class DepositDetailFragment : Fragment() {
             }
         })
 
-        binding.btnDEF.setOnClickListener {
-            changeFragment(DepositEndFragment())
-        }
+
 
         return binding.root
     }

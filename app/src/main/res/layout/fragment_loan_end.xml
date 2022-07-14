@@ -16,12 +16,14 @@
         android:layout_height="wrap_content"
         android:text="가까운 지점" />
 
-    <ImageView
-        android:id="@+id/imgLoanMap"
-        android:layout_margin="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:src="@drawable/deposit_map" />
+    <com.google.android.gms.maps.MapView
+            android:id="@+id/mapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:name="com.google.android"
+            >
+        </com.google.android.gms.maps.MapView>
+
 
     <Button
         android:id="@+id/btnHome2"

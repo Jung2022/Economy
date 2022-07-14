@@ -8,7 +8,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.economy.R
-import com.example.economy.consumption.DepositEndFragment
 import com.example.economy.databinding.FragmentLoanDetailBinding
 import com.example.economy.model.DepositModel
 import com.example.economy.model.LoanModel

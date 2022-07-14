@@ -29,6 +29,21 @@
         <entry key="..\:/Users/quuu9/AndroidStudioProjects/Economy/app/src/main/res/layout/region.xml" value="0.22" />
         <entry key="..\:/Users/quuu9/AndroidStudioProjects/Economy/app/src/main/res/layout/round.xml" value="0.35520833333333335" />
         <entry key="..\:/Users/quuu9/AndroidStudioProjects/Economy/app/src/main/res/layout/spinner_item.xml" value="0.607764390896921" />
+        <entry key="..\:/Users/rjs16/AndroidStudioProjects/Economy/app/src/main/res/layout/activity_deposit_end_activity.xml" value="0.25" />
+        <entry key="..\:/Users/rjs16/AndroidStudioProjects/Economy/app/src/main/res/layout/activity_deposit_end_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/rjs16/AndroidStudioProjects/Economy/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/rjs16/AndroidStudioProjects/Economy/app/src/main/res/layout/deposit.xml" value="0.3380208333333333" />
+        <entry key="..\:/Users/rjs16/AndroidStudioProjects/Economy/app/src/main/res/layout/fragment_consum_map.xml" value="0.3380208333333333" />
+        <entry key="..\:/Users/rjs16/AndroidStudioProjects/Economy/app/src/main/res/layout/fragment_consum_select.xml" value="0.3380208333333333" />
+        <entry key="..\:/Users/rjs16/AndroidStudioProjects/Economy/app/src/main/res/layout/fragment_credit_map.xml" value="0.3380208333333333" />
+        <entry key="..\:/Users/rjs16/AndroidStudioProjects/Economy/app/src/main/res/layout/fragment_credit_select.xml" value="0.3380208333333333" />
+        <entry key="..\:/Users/rjs16/AndroidStudioProjects/Economy/app/src/main/res/layout/fragment_deposit_detail.xml" value="0.3380208333333333" />
+        <entry key="..\:/Users/rjs16/AndroidStudioProjects/Economy/app/src/main/res/layout/fragment_deposit_end.xml" value="0.1" />
+        <entry key="..\:/Users/rjs16/AndroidStudioProjects/Economy/app/src/main/res/layout/fragment_loan_detail.xml" value="0.1" />
+        <entry key="..\:/Users/rjs16/AndroidStudioProjects/Economy/app/src/main/res/layout/fragment_loan_end.xml" value="0.3380208333333333" />
+        <entry key="..\:/Users/rjs16/AndroidStudioProjects/Economy/app/src/main/res/layout/fragment_test_map.xml" value="0.12962962962962962" />
+        <entry key="..\:/Users/rjs16/AndroidStudioProjects/Economy/app/src/main/res/layout/loan_items.xml" value="0.3380208333333333" />
+        <entry key="..\:/Users/rjs16/AndroidStudioProjects/Economy/app/src/main/res/layout/region.xml" value="0.3380208333333333" />
       </map>
     </option>
   </component>

@@ -28,4 +28,8 @@ interface INetworkService {
     @GET("credit/pattern")
     fun doGetPattern(@Query("gender")gender:String,
                     @Query("age")age:Int):Call<ConsumePatternListModel>
+
+    @GET("branch/all")
+    fun doGetBranchList():Call<BranchListModel>
+
 }

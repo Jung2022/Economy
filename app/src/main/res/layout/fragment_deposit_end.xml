@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:id="@+id/layout_main"
     tools:context=".consumption.DepositEndFragment" >
 
     <TextView
@@ -17,12 +18,24 @@
         android:layout_height="wrap_content"
         android:text="가까운 지점" />
 
-    <ImageView
-        android:id="@+id/imgDepositMap"
-        android:layout_margin="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:src="@drawable/deposit_map" />
+        <com.google.android.gms.maps.MapView
+
+            android:id="@+id/mapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:name="com.google.android"
+            >
+        </com.google.android.gms.maps.MapView>
+
+
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imgDepositMap"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="400dp"-->
+<!--        android:src="@drawable/deposit_map" />-->
 
     <Button
         android:id="@+id/btnHome1"
@@ -30,4 +43,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="처음으로" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/bankViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="120dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"/>
 </LinearLayout>

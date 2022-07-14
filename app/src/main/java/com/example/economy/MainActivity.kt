@@ -2,9 +2,6 @@ package com.example.economy
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import com.example.economy.consumption.ConsumSelectFragment
-import com.example.economy.credits.CreditSelectFragment
 import com.example.economy.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

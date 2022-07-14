@@ -4,5 +4,6 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <!-- ip주소 여기서 입력하기 -->
-    <string name="ip_address">http://10.100.103.37:8085/</string>
+    <string name="ip_address">http://192.168.0.2:8085/</string>
+    <string name="googleMapKey">AIzaSyCQjw4ciAZz3CgBoQkeEooIU8dcc0--jy0</string>
 </resources>
