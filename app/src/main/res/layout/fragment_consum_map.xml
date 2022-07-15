@@ -16,6 +16,7 @@
             android:orientation="vertical">
             <TextView
                 android:layout_marginTop="20dp"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:textSize="22sp"
                 android:layout_gravity="center"
@@ -30,6 +31,7 @@
                 android:src="@drawable/chart_ex" />
             <TextView
                 android:textStyle="bold"
+                android:textColor="@color/black"
                 android:textSize="22sp"
                 android:layout_gravity="center"
                 android:id="@+id/tvCRF2"
@@ -50,6 +52,7 @@
                 <TextView
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/black"
                     android:text="종목 선택 : "/>
                 <Spinner
                     android:id="@+id/chartSpinner"
@@ -64,9 +67,11 @@
                 <TextView
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/black"
                     android:text="목표 금액 : "/>
                 <EditText
                     android:id="@+id/eTMoney"
+                    android:textColor="@color/black"
                     android:layout_width="260dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -76,6 +81,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/black"
                     android:text="원"/>
             </LinearLayout>
         </LinearLayout>

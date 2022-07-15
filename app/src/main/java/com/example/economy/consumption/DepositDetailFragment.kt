@@ -57,7 +57,7 @@ class DepositDetailFragment : Fragment() {
         var depositPeriod = if (deposit.maxPeriod==deposit.minPeriod){
             deposit.maxPeriod.toString()+"개월"
         }else{
-            deposit.maxPeriod.toString()+"~"+deposit.minPeriod.toString()+"개월"
+            deposit.minPeriod.toString()+"~"+deposit.maxPeriod.toString()+"개월"
         }
 
         binding.DepositDetailName.text=deposit.depositName

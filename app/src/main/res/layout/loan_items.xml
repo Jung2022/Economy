@@ -30,6 +30,7 @@
             android:layout_marginBottom="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="대출 이름" />
 
         <TextView
@@ -37,6 +38,7 @@
             android:textSize="15sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="금리 : 4.5 ~" />
     </LinearLayout>
 

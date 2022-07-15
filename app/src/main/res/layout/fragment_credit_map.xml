@@ -22,6 +22,7 @@
                 android:id="@+id/tvCreditMap"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:text="신용 지도" />
             <ImageView
                 android:id="@+id/imgCreditMap"
@@ -41,6 +42,7 @@
                 android:layout_marginVertical="5dp"
                 android:textSize="20sp"
                 android:gravity="center"
+                android:textColor="@color/black"
                 android:text="지역구, 나이 평균 신용점수 : 000점"/>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -50,6 +52,7 @@
                 <TextView
                     android:layout_width="110dp"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/black"
                     android:text="신용 점수(NICE) : "/>
                 <EditText
                     android:id="@+id/eTCredit"
@@ -58,10 +61,12 @@
                     android:ems="10"
                     android:maxLength="4"
                     android:inputType="number"
+                    android:textColor="@color/black"
                     android:hint="점수 입력(0~1000)"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/black"
                     android:text="점"/>
             </LinearLayout>
             <LinearLayout
@@ -72,6 +77,7 @@
                 <TextView
                     android:layout_width="110dp"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/black"
                     android:text="대출 금액 : "/>
                 <EditText
                     android:id="@+id/eTLoan"
@@ -80,10 +86,12 @@
                     android:ems="10"
                     android:maxLength="11"
                     android:inputType="number"
+                    android:textColor="@color/black"
                     android:hint="금액 입력"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/black"
                     android:text="원"/>
             </LinearLayout>
         </LinearLayout>

@@ -32,6 +32,7 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textSize="25sp"
+            android:textColor="@color/black"
             android:text="성별, 연령" />
         <View
             android:layout_width="match_parent"
@@ -44,12 +45,14 @@
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:text="종목 : "/>
             <TextView
                 android:id="@+id/tvDepositProduct"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
+                android:textColor="@color/black"
                 android:text="선택한 종목" />
         </LinearLayout>
         <LinearLayout
@@ -59,12 +62,14 @@
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:text="목표 금액 : "/>
             <TextView
                 android:id="@+id/tvDLMoney"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
+                android:textColor="@color/black"
                 android:text="금액" />
         </LinearLayout>
     </LinearLayout>

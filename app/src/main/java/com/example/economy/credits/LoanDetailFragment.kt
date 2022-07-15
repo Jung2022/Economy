@@ -55,7 +55,7 @@ class LoanDetailFragment : Fragment() {
         } else{
             binding.tvLoanPeriod.text=loan.minPeriod.toString()+"~"+loan.maxPeriod+"년"
         }
-        if(loan.lessCredit==0){
+        if(loan.lessCredit==1000){
             binding.tvLoanCondition.text="신용등급 "+loan.overCredit+" 이상"
         }else{
             binding.tvLoanCondition.text="신용등급 "+loan.lessCredit+" 이하"

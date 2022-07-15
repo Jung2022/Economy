@@ -23,6 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
             android:text="TextView" />
         <TextView
             android:id="@+id/DepositBank"
@@ -30,6 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
             android:text="TextView"/>
         <View
             android:layout_width="match_parent"
@@ -49,6 +51,7 @@
                 android:layout_width="80sp"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
+                android:textColor="@color/black"
                 android:text="최고 금리 :" />
 
             <TextView
@@ -58,6 +61,7 @@
                 android:layout_width="90sp"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
+                android:textColor="@color/black"
                 android:text="TextView" />
 
             <TextView
@@ -67,6 +71,7 @@
                 android:layout_width="80sp"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
+                android:textColor="@color/black"
                 android:text="최저 금리 :" />
 
             <TextView
@@ -76,6 +81,7 @@
                 android:layout_width="90sp"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
+                android:textColor="@color/black"
                 android:text="TextView" />
 
             <TextView
@@ -84,6 +90,7 @@
                 android:textSize="15sp"
                 android:layout_row="1"
                 android:layout_column="0"
+                android:textColor="@color/black"
                 android:text="가입 기간 :"/>
             <TextView
                 android:id="@+id/tvDepositPeriod"
@@ -92,28 +99,15 @@
                 android:layout_row="1"
                 android:layout_column="1"
                 android:textSize="15sp"
+                android:textColor="@color/black"
                 android:text="6~36개월"/>
-            <TextView
-                android:layout_width="80sp"
-                android:layout_height="wrap_content"
-                android:textSize="15sp"
-                android:layout_row="1"
-                android:layout_column="2"
-                android:text="가입 대상 :"/>
-            <TextView
-                android:id="@+id/tvDepositTarget"
-                android:layout_width="90sp"
-                android:layout_height="wrap_content"
-                android:layout_row="1"
-                android:layout_column="3"
-                android:textSize="15sp"
-                android:text="20대, 30대"/>
             <TextView
                 android:layout_width="80sp"
                 android:layout_height="wrap_content"
                 android:layout_row="2"
                 android:layout_column="0"
                 android:textSize="15sp"
+                android:textColor="@color/black"
                 android:text="가입 금액 :"/>
             <TextView
                 android:id="@+id/tvDepositMoney"
@@ -123,6 +117,7 @@
                 android:layout_column="1"
                 android:textSize="15sp"
                 android:layout_columnSpan="3"
+                android:textColor="@color/black"
                 android:text="가입 금액"/>
         </GridLayout>
 
@@ -142,6 +137,7 @@
             android:gravity="center"
             android:textSize="30sp"
             android:textStyle="bold"
+            android:textColor="@color/black"
             android:text="적금 계산기"/>
         <View
             android:layout_width="match_parent"
@@ -156,6 +152,7 @@
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
+                android:textColor="@color/black"
                 android:text="기간 :" />
             <Spinner
                 android:id="@+id/depositPeriodSpinner"
@@ -172,12 +169,14 @@
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
+                android:textColor="@color/black"
                 android:text="금리"/>
             <TextView
                 android:id="@+id/tvCalRate"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
+                android:textColor="@color/black"
                 android:text="0.0 %"/>
             <SeekBar
                 android:id="@+id/seekBarRate"
@@ -190,12 +189,14 @@
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
+                android:textColor="@color/black"
                 android:text="금액"/>
             <TextView
                 android:id="@+id/tvCalMoney"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
+                android:textColor="@color/black"
                 android:text="1000 원"/>
             <SeekBar
                 android:id="@+id/seekBarMoney"
@@ -212,6 +213,7 @@
                 android:gravity="center"
                 android:textSize="20sp"
                 android:textStyle="bold"
+                android:textColor="@color/black"
                 android:text="목표 금액 : 0 원"/>
             <TextView
                 android:id="@+id/tvCalResult"
@@ -221,6 +223,7 @@
                 android:gravity="center"
                 android:textSize="25sp"
                 android:textStyle="bold"
+                android:textColor="@color/black"
                 android:text="적금 금액 : 0 원"/>
         </GridLayout>
 
